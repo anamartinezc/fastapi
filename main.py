@@ -43,3 +43,5 @@ async def create_post(post: Post):
         raise HTTPException(status_code=response.status_code, detail="Error creating post")
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+    
+    print(HOLA JENNI)
